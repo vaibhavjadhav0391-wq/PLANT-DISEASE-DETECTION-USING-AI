@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <!-- Icon Group -->
+  <g transform="translate(50, 40)">
+    <!-- Subtle Background Circle -->
+    <circle cx="60" cy="60" r="55" fill="#0F2A1E" stroke="#1F4A35" stroke-width="2" />
+    
+    <!-- Stylized Minimalist Leaf -->
+    <path d="M60,15 C90,15 105,40 105,65 C105,95 60,105 60,105 C60,105 15,95 15,65 C15,40 30,15 60,15 Z" fill="#22C55E" />
+    <!-- Leaf shadow/fold for depth -->
+    <path d="M60,15 C60,15 95,30 95,65 C95,95 60,105 60,105 Z" fill="#16A34A" />
+    <!-- Center Vein -->
+    <path d="M60,15 L60,100" stroke="#E8F5E9" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Object Detection Box (Minimalist representation of AI/Computer Vision) -->
+    <!-- Top Left -->
+    <path d="M25,30 L45,30" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M25,30 L25,50" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    
+    <!-- Top Right -->
+    <path d="M95,30 L75,30" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M95,30 L95,50" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    
+    <!-- Bottom Left -->
+    <path d="M25,90 L45,90" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M25,90 L25,70" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    
+    <!-- Bottom Right -->
+    <path d="M95,90 L75,90" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M95,90 L95,70" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
+    
+    <!-- Simple AI focus dot indicating a detected anomaly -->
+    <circle cx="75" cy="55" r="6" fill="#FFFFFF" />
+    <circle cx="75" cy="55" r="3" fill="#00BCD4" />
+  </g>
+
+  <!-- Typography Layout (Horizontal) -->
+  <g transform="translate(200, 98)">
+    <!-- Main Title -->
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="34" font-weight="800" fill="#F4FBF6" letter-spacing="0.5">
+      PLANT DISEASE DETECTION
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="3" y="32" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#22C55E" letter-spacing="3">
+      POWERED BY AI
+    </text>
+    
+    <!-- Minimalist Separator Line -->
+    <line x1="150" y1="27" x2="180" y2="27" stroke="#00BCD4" stroke-width="2" />
+  </g>
+</svg>

@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 
+import { BrandLogo } from "@/components/BrandLogo"
+
 export interface NavigationSection {
   title: string
   href: string
@@ -46,13 +48,8 @@ export default function Header({
     <header className="sticky top-0 z-40 w-full px-4 sm:px-8 py-3 backdrop-blur-md bg-[#07130E]/85 border-b border-[#1F4A35]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand */}
-        <a href="#home" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-[#22C55E] flex items-center justify-center text-[#07130E] shadow-md shadow-[#22C55E]/30 transition-transform group-hover:scale-105">
-            <Leaf className="w-5 h-5 text-[#07130E]" />
-          </div>
-          <span className="text-sm sm:text-base font-extrabold tracking-tight uppercase text-[#F4FBF6]">
-            Plant Disease Detection <span className="text-[#22C55E]">Using AI</span>
-          </span>
+        <a href="#home" className="group">
+          <BrandLogo size="md" />
         </a>
 
         {/* Desktop Navigation */}
@@ -146,9 +143,8 @@ export default function Header({
             </SheetTrigger>
             <SheetContent side="right" className="bg-[#0F2A1E] border-[#1F4A35] text-[#F4FBF6]">
               <SheetHeader className="mb-6 text-left">
-                <SheetTitle className="text-[#F4FBF6] flex items-center gap-2">
-                  <Leaf className="w-5 h-5 text-[#22C55E]" />
-                  <span>Plant Disease AI</span>
+                <SheetTitle className="text-[#F4FBF6]">
+                  <BrandLogo size="sm" />
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-3">

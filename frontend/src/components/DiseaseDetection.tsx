@@ -14,6 +14,7 @@ import {
   Leaf,
   Layers,
 } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 
 interface DiseaseDetectionProps {
   onBackToHome: () => void;
@@ -182,15 +183,20 @@ export const DiseaseDetection: React.FC<DiseaseDetectionProps> = ({
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-8 max-w-6xl mx-auto z-20 relative">
-      {/* Top Header / Back Button */}
+      {/* Top Header / Back Button & Brand */}
       <div className="flex items-center justify-between mb-8">
-        <button
-          onClick={onBackToHome}
-          className="secondary-btn inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold cursor-pointer"
-        >
-          <ArrowLeft className="w-4 h-4 text-[#22C55E]" />
-          <span>Back to Landing Page</span>
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={onBackToHome}
+            className="secondary-btn inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 text-[#22C55E]" />
+            <span>Back to Home</span>
+          </button>
+          <div className="hidden sm:block">
+            <BrandLogo size="sm" showText={false} />
+          </div>
+        </div>
 
         <div className="flex items-center gap-2 text-xs" style={{ color: "#22C55E" }}>
           <span className="w-2 h-2 rounded-full animate-ping" style={{ backgroundColor: "#22C55E" }} />
