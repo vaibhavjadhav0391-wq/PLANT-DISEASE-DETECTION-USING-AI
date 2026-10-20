@@ -5,6 +5,7 @@ import BrandSlider, {
   BrandList,
 } from "@/components/ui/hero-01-utils/brand-slider";
 import type { AvatarList } from "@/components/ui/hero-01-utils/hero";
+import InkRidges from "@/components/ui/ink-ridges";
 
 interface AgencyHeroSectionProps {
   onLaunchApp?: () => void;
@@ -97,7 +98,32 @@ export default function AgencyHeroSection({
         onLanguageChange={onLanguageChange}
       />
       <main>
-        <HeroSection avatarList={avatarList} onLaunchApp={onLaunchApp} />
+        {/* InkRidges procedural living mountain canvas background */}
+        <InkRidges
+          layers={4}
+          seed={11}
+          horizon={0.64}
+          mist={0.62}
+          drift={0.045}
+          parallax={0.03}
+          paintIn={2400}
+          sun={true}
+          sunPosition={[0.82, 0.76]}
+          sunSize={0.07}
+          sunColor="#22C55E"
+          inkColor="#22C55E"
+          moon={false}
+          scrollDepth={0.35}
+          grain={0.25}
+          clouds={0.3}
+          glow={0.5}
+          birds={5}
+          birdsEvery={12}
+          label="Misty mountain agricultural landscape painted by code"
+          className="w-full bg-[#07130E]"
+        >
+          <HeroSection avatarList={avatarList} onLaunchApp={onLaunchApp} />
+        </InkRidges>
         <BrandSlider brandList={brandList} />
       </main>
     </div>

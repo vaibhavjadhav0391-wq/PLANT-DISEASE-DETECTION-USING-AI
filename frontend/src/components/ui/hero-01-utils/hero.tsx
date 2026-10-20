@@ -22,13 +22,13 @@ export default function HeroSection({ avatarList, onLaunchApp }: HeroSectionProp
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Top announcement pill */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-8 bg-[#0F2A1E] border border-[#1F4A35] text-[#22C55E] shadow-lg">
-          <Sparkles className="w-3.5 h-3.5" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-8 bg-[#0F2A1E]/85 backdrop-blur-md border border-[#1F4A35] text-[#22C55E] shadow-xl hover:border-[#22C55E]/60 transition-colors">
+          <Sparkles className="w-3.5 h-3.5 text-[#22C55E] animate-pulse" />
           <span>Next-Gen Agricultural Intelligence Engine</span>
         </div>
 
         {/* Main hero title */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#F4FBF6] mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#F4FBF6] mb-6 leading-tight drop-shadow-md">
           Detect Earlier. <br className="hidden sm:inline" />
           <span className="bg-gradient-to-r from-[#22C55E] via-[#BEF264] to-[#22C55E] bg-clip-text text-transparent">
             Grow Smarter.
@@ -37,7 +37,7 @@ export default function HeroSection({ avatarList, onLaunchApp }: HeroSectionProp
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg max-w-2xl mx-auto text-[#B6CCBF] mb-10 leading-relaxed">
+        <p className="text-base sm:text-lg max-w-2xl mx-auto text-[#B6CCBF] mb-10 leading-relaxed drop-shadow">
           Upload any crop leaf photograph. Our dual-stream deep CNN accurately classifies 38 disease categories, maps Grad-CAM visual heatmaps, and correlates live weather risk in seconds.
         </p>
 
