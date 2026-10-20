@@ -1,6 +1,6 @@
 import HeroSection from "@/components/ui/hero-01-utils/hero";
-import type { NavigationSection } from "@/components/ui/hero-01-utils/header";
-import Header from "@/components/ui/hero-01-utils/header";
+import type { NavigationSection } from "@/components/ui/header-01";
+import Header from "@/components/ui/header-01";
 import BrandSlider, {
   BrandList,
 } from "@/components/ui/hero-01-utils/brand-slider";
