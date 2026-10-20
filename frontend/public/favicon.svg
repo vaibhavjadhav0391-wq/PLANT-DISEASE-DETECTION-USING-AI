@@ -1,32 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
-  <!-- Subtle Background Circle -->
-  <circle cx="60" cy="60" r="55" fill="#0F2A1E" stroke="#1F4A35" stroke-width="2" />
-  
-  <!-- Stylized Minimalist Leaf -->
-  <path d="M60,15 C90,15 105,40 105,65 C105,95 60,105 60,105 C60,105 15,95 15,65 C15,40 30,15 60,15 Z" fill="#22C55E" />
-  <!-- Leaf shadow/fold for depth -->
-  <path d="M60,15 C60,15 95,30 95,65 C95,95 60,105 60,105 Z" fill="#16A34A" />
-  <!-- Center Vein -->
-  <path d="M60,15 L60,100" stroke="#E8F5E9" stroke-width="2" stroke-linecap="round" />
-  
-  <!-- Object Detection Box (Minimalist representation of AI/Computer Vision) -->
-  <!-- Top Left -->
-  <path d="M25,30 L45,30" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  <path d="M25,30 L25,50" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  
-  <!-- Top Right -->
-  <path d="M95,30 L75,30" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  <path d="M95,30 L95,50" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  
-  <!-- Bottom Left -->
-  <path d="M25,90 L45,90" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  <path d="M25,90 L25,70" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  
-  <!-- Bottom Right -->
-  <path d="M95,90 L75,90" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  <path d="M95,90 L95,70" stroke="#00BCD4" stroke-width="4" stroke-linecap="round" fill="none" />
-  
-  <!-- Simple AI focus dot indicating a detected anomaly -->
-  <circle cx="75" cy="55" r="6" fill="#FFFFFF" />
-  <circle cx="75" cy="55" r="3" fill="#00BCD4" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200" width="100%" height="100%">
+  <!-- Ground / Soil -->
+  <path d="M 10,180 L 190,180" stroke="#1F4A35" stroke-width="8" stroke-linecap="round" />
+  <path d="M 30,176 C 40,155 60,145 80,150 C 90,135 110,135 125,145 C 145,140 160,155 165,176 Z" fill="#143826" />
+
+  <!-- Plant Stem -->
+  <path d="M 95,150 L 95,70 C 95,55 85,45 75,45 C 65,45 55,55 55,70" fill="none" stroke="#22C55E" stroke-width="8" stroke-linecap="round" />
+  <path d="M 95,110 C 110,100 120,105 125,120" fill="none" stroke="#22C55E" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Left Drooping Leaf -->
+  <path d="M 55,65 C 20,80 15,115 25,130 C 45,135 75,115 85,85 C 80,65 65,60 55,65 Z" fill="#16A34A" />
+  <path d="M 55,75 L 45,115 M 45,95 L 35,90 M 45,105 L 60,110" stroke="#BEF264" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Right Drooping Leaf -->
+  <path d="M 125,115 C 105,140 115,165 130,170 C 155,165 170,135 165,115 C 150,105 135,105 125,115 Z" fill="#16A34A" />
+  <path d="M 128,122 L 145,155 M 138,140 L 150,135" stroke="#BEF264" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Microscopic Callout Box & Line -->
+  <line x1="145" y1="140" x2="195" y2="90" stroke="#22C55E" stroke-width="5" stroke-linecap="round" />
+  <rect x="150" y="10" width="105" height="95" rx="10" fill="#0F2A1E" stroke="#1F4A35" stroke-width="3" />
+
+  <!-- Bacteria / Pathogens inside the box -->
+  <g transform="translate(150, 10)">
+    <g transform="translate(32, 38) rotate(-30)">
+      <rect x="-15" y="-6" width="30" height="12" rx="6" fill="none" stroke="#BEF264" stroke-width="3" />
+      <line x1="-10" y1="-6" x2="-10" y2="-10" stroke="#BEF264" stroke-width="2" />
+      <line x1="0" y1="-6" x2="0" y2="-10" stroke="#BEF264" stroke-width="2" />
+      <line x1="10" y1="-6" x2="10" y2="-10" stroke="#BEF264" stroke-width="2" />
+      <line x1="-10" y1="6" x2="-10" y2="10" stroke="#BEF264" stroke-width="2" />
+      <line x1="0" y1="6" x2="0" y2="10" stroke="#BEF264" stroke-width="2" />
+      <line x1="10" y1="6" x2="10" y2="10" stroke="#BEF264" stroke-width="2" />
+    </g>
+    
+    <g transform="translate(68, 58) rotate(15)">
+      <rect x="-12" y="-5" width="24" height="10" rx="5" fill="none" stroke="#22C55E" stroke-width="3" />
+      <line x1="-6" y1="-5" x2="-6" y2="-8" stroke="#22C55E" stroke-width="2" />
+      <line x1="6" y1="-5" x2="6" y2="-8" stroke="#22C55E" stroke-width="2" />
+      <line x1="-6" y1="5" x2="-6" y2="8" stroke="#22C55E" stroke-width="2" />
+      <line x1="6" y1="5" x2="6" y2="8" stroke="#22C55E" stroke-width="2" />
+    </g>
+
+    <circle cx="20" cy="22" r="3" fill="#BEF264" />
+    <circle cx="28" cy="15" r="2" fill="#BEF264" />
+    <circle cx="75" cy="25" r="2.5" fill="#BEF264" />
+    <circle cx="85" cy="35" r="2" fill="#BEF264" />
+    <circle cx="45" cy="78" r="2.5" fill="#BEF264" />
+    <circle cx="35" cy="68" r="2" fill="#BEF264" />
+  </g>
 </svg>
