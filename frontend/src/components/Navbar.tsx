@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <a href="#home" className="hover:text-[#22C55E] transition-colors">Home</a>
           <a href="#features" className="hover:text-[#22C55E] transition-colors">Features</a>
           <a href="#how-it-works" className="hover:text-[#22C55E] transition-colors">How It Works</a>
-          <a href="#multilingual" className="hover:text-[#22C55E] transition-colors">Languages</a>
+          <a href="#path-showcase" className="hover:text-[#22C55E] transition-colors">Showcase</a>
           <a href="#team" className="hover:text-[#22C55E] transition-colors">Team</a>
         </div>
 
@@ -169,11 +169,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             How It Works
           </a>
           <a
-            href="#multilingual"
+            href="#path-showcase"
             onClick={() => setMobileMenuOpen(false)}
             className="py-1.5 hover:text-[#22C55E]"
           >
-            Languages & Crops
+            AI Showcase
           </a>
           <a
             href="#team"

@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Team } from "@/components/Team";
+import { CropPathShowcase } from "@/components/CropPathShowcase";
 import { DiseaseDetection } from "@/components/DiseaseDetection";
 
 export default function App() {
@@ -58,6 +59,9 @@ export default function App() {
 
           {/* How It Works */}
           <HowItWorks />
+
+          {/* Interactive Marquee Along SVG Path - Crop Disease Class Ribbon */}
+          <CropPathShowcase />
 
           {/* Dedicated Team Members Section */}
           <Team />
