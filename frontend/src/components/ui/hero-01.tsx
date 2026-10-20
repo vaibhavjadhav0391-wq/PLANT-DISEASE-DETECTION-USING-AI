@@ -52,8 +52,8 @@ export default function AgencyHeroSection({
       href: "#how-it-works",
     },
     {
-      title: "AI Ribbon",
-      href: "#path-showcase",
+      title: "Technologies",
+      href: "#technologies",
     },
     {
       title: "Team",

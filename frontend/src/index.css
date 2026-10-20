@@ -130,3 +130,33 @@ html, body {
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Flowing Logos Canopy Animations */
+@keyframes canopy-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 2rem)));
+  }
+}
+
+@keyframes canopy-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 2rem)));
+  }
+}
+
+.animate-canopy-x {
+  display: flex;
+  user-select: none;
+  animation: canopy-x var(--duration, 35s) linear infinite;
+}
+
+.animate-canopy-x:hover {
+  animation-play-state: paused;
+}
+

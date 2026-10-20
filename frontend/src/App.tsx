@@ -5,7 +5,7 @@ import AgencyHeroSection from "@/components/ui/hero-01";
 import { Features } from "@/components/Features";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Team } from "@/components/Team";
-import { CropPathShowcase } from "@/components/CropPathShowcase";
+import LogoCloudMarquee from "@/components/ui/logo-cloud-marquee";
 import { DiseaseDetection } from "@/components/DiseaseDetection";
 
 export default function App() {
@@ -56,8 +56,8 @@ export default function App() {
           {/* How It Works */}
           <HowItWorks />
 
-          {/* Interactive Marquee Along SVG Path - Crop Disease Class Ribbon */}
-          <CropPathShowcase />
+          {/* Technologies Used Logo Cloud Marquee */}
+          <LogoCloudMarquee />
 
           {/* Dedicated Team Members Section */}
           <Team />
