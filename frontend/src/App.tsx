@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { LogoCloud } from "@/components/ui/logo-cloud-15";
 import { StarburstThanksFooter } from "@/components/ui/starburst-thanks-footer";
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
+import AgencyHeroSection from "@/components/ui/hero-01";
 import { Features } from "@/components/Features";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Team } from "@/components/Team";
@@ -36,18 +35,15 @@ export default function App() {
         <div className="absolute inset-0 bg-[#07130E]" style={{ zIndex: -1 }} />
       </div>
 
-      {/* Floating Navbar */}
-      <Navbar
-        onLaunchApp={handleLaunchApp}
-        activeLanguage={language}
-        onLanguageChange={setLanguage}
-      />
-
       {/* Dynamic View Router */}
       {currentPage === "landing" ? (
         <main className="relative z-10 w-full">
-          {/* Hero Section */}
-          <Hero onGetStarted={handleLaunchApp} language={language} />
+          {/* Hero-01 System (Header + Centered Hero + BrandSlider) */}
+          <AgencyHeroSection
+            onLaunchApp={handleLaunchApp}
+            activeLanguage={language}
+            onLanguageChange={setLanguage}
+          />
 
           {/* Multilingual / Crops Animated LogoCloud */}
           <section id="multilingual" className="relative z-20 py-10 w-full">

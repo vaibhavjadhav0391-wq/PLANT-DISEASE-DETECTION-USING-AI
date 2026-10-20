@@ -1,5 +1,5 @@
 import React from "react"
-import { Sparkles, ArrowRight, CheckCircle2, ShieldAlert, Cpu } from "lucide-react"
+import { Sparkles, ArrowRight, CheckCircle2, Cpu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export interface AvatarList {
@@ -8,15 +8,16 @@ export interface AvatarList {
 
 interface HeroSectionProps {
   avatarList: AvatarList[]
+  onLaunchApp?: () => void
 }
 
-export default function HeroSection({ avatarList }: HeroSectionProps) {
+export default function HeroSection({ avatarList, onLaunchApp }: HeroSectionProps) {
   return (
-    <section className="relative pt-12 pb-20 px-4 sm:px-8 overflow-hidden">
+    <section id="home" className="relative pt-16 pb-20 px-4 sm:px-8 overflow-hidden">
       {/* Glow highlight */}
       <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[320px] rounded-full blur-[120px] pointer-events-none opacity-30"
-        style={{ background: "radial-gradient(circle, rgba(34, 197, 94, 0.25) 0%, transparent 70%)" }}
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full blur-[140px] pointer-events-none opacity-35"
+        style={{ background: "radial-gradient(circle, rgba(34, 197, 94, 0.28) 0%, transparent 70%)" }}
       />
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -43,14 +44,14 @@ export default function HeroSection({ avatarList }: HeroSectionProps) {
         {/* Action buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <Button
-            asChild
+            onClick={onLaunchApp}
             size="lg"
             className="w-full sm:w-auto bg-[#22C55E] hover:bg-[#16A34A] text-[#07130E] font-extrabold text-sm px-8 py-6 rounded-2xl shadow-xl shadow-[#22C55E]/20"
           >
-            <a href="#home" className="flex items-center justify-center gap-2">
+            <span className="flex items-center justify-center gap-2">
               <span>Launch Live Plant Scanner</span>
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </span>
           </Button>
 
           <Button
@@ -85,7 +86,7 @@ export default function HeroSection({ avatarList }: HeroSectionProps) {
               <span>99.2% Test Accuracy • 54,305 Leaf Samples</span>
             </div>
             <p className="text-[#B6CCBF]/80 text-xs">
-              Trusted by agronomists, farming cooperatives, and researchers
+              Trained on PlantVillage 38-class benchmark with Grad-CAM explainability
             </p>
           </div>
         </div>
