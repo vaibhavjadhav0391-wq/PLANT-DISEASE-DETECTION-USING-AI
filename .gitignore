@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node dependencies & build outputs
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+.pnp
+.pnp.js
+.npm/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Datasets and Large Binary Models
+datasets/
+models/
+saved_models/*.keras
+saved_models/*.h5
+saved_models/*.pt
+saved_models/*.pkl
+*.h5
+*.pt
+*.pkl
+!saved_models/class_indices.json
+
+# Outputs & Temporary files
+outputs/
+results/
+sample_images/
+website/static/uploads/
+website/static/reports/
+reports/output/
+knowledge_base/disease_database.backup.json
+.ipynb_checkpoints/

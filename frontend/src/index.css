@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #07130E;
+    --bg-card: #0F2A1E;
+    --border-color: #1F4A35;
+    --primary: #22C55E;
+    --primary-hover: #16A34A;
+    --primary-text: #04130B;
+    --highlight-lime: #BEF264;
+    --warning-amber: #FBBF24;
+    --danger-red: #EF4444;
+    --text-heading: #F4FBF6;
+    --text-body: #B6CCBF;
+
+    /* Shadcn standard tokens mapped to palette */
+    --background: 154 44% 5%;
+    --foreground: 139 36% 97%;
+    --card: 154 47% 11%;
+    --card-foreground: 139 36% 97%;
+    --popover: 154 47% 11%;
+    --popover-foreground: 139 36% 97%;
+    --primary-hsl: 142 71% 45%;
+    --primary-foreground: 150 67% 5%;
+    --secondary: 154 36% 15%;
+    --secondary-foreground: 142 20% 75%;
+    --muted: 154 30% 14%;
+    --muted-foreground: 142 16% 75%;
+    --accent-hsl: 142 71% 45%;
+    --accent-foreground: 150 67% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 154 35% 20%;
+    --input: 154 35% 20%;
+    --ring: 142 71% 45%;
+    --radius: 0.75rem;
+  }
+}
+
+html, body {
+  background-color: #07130E;
+  color: #B6CCBF;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #07130E;
+}
+
+/* Glassmorphism and Panels */
+.glass-panel {
+  background: #0F2A1E;
+  border: 1px solid #1F4A35;
+}
+
+.glass-card {
+  background: #0F2A1E;
+  border: 1px solid #1F4A35;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: #133527;
+  border-color: #22C55E;
+  box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.22);
+  transform: translateY(-2px);
+}
+
+/* Main buttons */
+.glow-button {
+  background-color: #22C55E;
+  color: #04130B;
+  box-shadow: 0 0 20px -3px rgba(34, 197, 94, 0.45);
+  transition: all 0.25s ease;
+}
+
+.glow-button:hover {
+  background-color: #16A34A;
+  box-shadow: 0 0 28px 2px rgba(34, 197, 94, 0.65);
+}
+
+/* Secondary outline buttons */
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid #1F4A35;
+  color: #F4FBF6;
+  transition: all 0.25s ease;
+}
+
+.secondary-btn:hover {
+  border-color: #22C55E;
+  color: #F4FBF6;
+  background-color: rgba(34, 197, 94, 0.08);
+}
+
+/* Marquee Animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  user-select: none;
+  gap: var(--gap, 1rem);
+  animation: marquee var(--duration, 25s) linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
